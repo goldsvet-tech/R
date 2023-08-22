@@ -1,0 +1,44 @@
+{
+    "port": 18080,
+    "engine": "memory",
+    "api_key": "d91741cd-9403-4743-a6bf-d45c05a84a85",
+    "token_hmac_secret_key": "2c4371bd-e76a-4a4a-bdee-cfce4807becb",
+    "user_subscribe_to_personal": true,
+    "client_insecure": true,
+    "user_personal_single_connection": false,
+    "user_personal_channel_namespace": "personal",
+    "allowed_origins": [
+      "http://localhost",
+      "http://127.0.0.1",
+      "https://api.casino.east.ovh",
+      "https://casino.east.ovh"
+    ],
+    "namespaces": [
+      {
+        "name": "personal",
+        "presence": true,
+        "allow_subscribe_for_client": false,
+        "allow_subscribe_for_anonymous": false,
+        "allow_publish_for_subscriber": false,
+        "allow_publish_for_anonymous": false,
+        "allow_history_for_subscriber": false,
+        "allow_history_for_anonymous": false,
+        "allow_presence_for_subscriber": false,
+        "allow_presence_for_anonymous": false
+      },
+      {
+        "name": "pubstates",
+        "presence": false,
+        "allow_subscribe_for_client": true,
+        "allow_subscribe_for_anonymous": true,
+        "allow_publish_for_subscriber": false,
+        "history_size": 10,
+        "history_ttl": "300s",
+        "allow_publish_for_anonymous": false,
+        "allow_history_for_subscriber": false,
+        "allow_history_for_anonymous": false,
+        "allow_presence_for_subscriber": false,
+        "allow_presence_for_anonymous": false
+      }
+    ]
+  }
